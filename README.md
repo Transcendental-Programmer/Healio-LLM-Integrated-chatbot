@@ -5,10 +5,10 @@
 This project implements a chatbot interface for a hospital system. It uses a LangChain agent designed to answer questions about hospitals, patients, visits, physicians, and insurance payers in a simulated hospital system. The chatbot utilizes retrieval-augmented generation (RAG) over both structured and unstructured synthetically generated data.
 
 ## Images
-1. Home_page
-- 
-2. Prompt_Example
-- 
+### 1. Home_page
+   ![home_page](https://github.com/Transcendental-Programmer/Healio-LLM-Integrated-chatbot/blob/main/static/images/home_page.png)
+### 2. Prompt_Example
+   ![Prompt_example](https://github.com/Transcendental-Programmer/Healio-LLM-Integrated-chatbot/blob/main/static/images/example_prompt.png)
 
 ## Features
 - Interactive web-based chat interface
