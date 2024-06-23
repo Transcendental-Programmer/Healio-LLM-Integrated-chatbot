@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healio Hospital System Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>About</h2>
+            <p>This chatbot interfaces with a LangChain agent designed to answer questions about the hospitals, patients, visits, physicians, and insurance payers in a fake hospital system. The agent uses retrieval-augment generation (RAG) over both structured and unstructured data that has been synthetically generated.</p>
+            
+            <h2>Example Questions</h2>
+            <ul>
+                <li>Which hospitals are in the hospital system?</li>
+                <li>What is the current wait time at wallace-hamilton hospital?</li>
+                <li>At which hospitals are patients complaining about billing and insurance issues?</li>
+                <li>What is the average duration in days for emergency visits?</li>
+                <li>What are patients saying about the nursing staff at Castaneda-Hardy?</li>
+                <li>What was the total billing amount charged to each payer for 2023?</li>
+            </ul>
+        </aside>
+        <main class="chat-area">
+            <h1>Healio Chatbot</h1>
+            <p class="subtitle">Ask me questions about patients, visits, insurance payers, hospitals, physicians, reviews, and wait times!</p>
+            <div id="chat-messages"></div>
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="What do you want to know?">
+                <button id="send-button" aria-label="Send message">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <title>Send</title>
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
