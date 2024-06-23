@@ -2,7 +2,7 @@
 # Hospital System Chatbot
 
 ## Description
-This project implements a chatbot interface for a hospital system. It uses a LangChain agent designed to answer questions about hospitals, patients, visits, physicians, and insurance payers in a simulated hospital system. The chatbot utilizes retrieval-augmented generation (RAG) over both structured and unstructured synthetically generated data.
+This project implements a chatbot interface for a hospital system. It uses a LangChain agent designed to answer questions about hospitals, patients, visits, physicians, and insurance payers in a simulated hospital system. The chatbot utilizes retrieval-augmented generation (RAG) over both structured and unstructured synthetically generated data. Here i am using the gpt-2 llm for query encoding, parsing to mongo_db database and intelligent generation of responses.
 
 ## Images
 ### 1. Home_page
